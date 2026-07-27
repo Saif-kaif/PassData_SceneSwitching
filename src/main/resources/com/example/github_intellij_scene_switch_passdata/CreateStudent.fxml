@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.github_intellij_scene_switch_passdata.CreateStudentViewController">
+   <children>
+      <TextField fx:id="nameTF" layoutX="85.0" layoutY="38.0" />
+      <TextField fx:id="cgpaTF" layoutX="421.0" layoutY="38.0" />
+      <DatePicker fx:id="dobDatePicker" layoutX="85.0" layoutY="93.0" />
+      <ComboBox fx:id="genderComboBox" layoutX="421.0" layoutY="93.0" prefWidth="150.0" />
+      <Label layoutX="32.0" layoutY="42.0" text="Name:" />
+      <Label layoutX="2.0" layoutY="97.0" text="Date Of Birth " />
+      <Label layoutX="369.0" layoutY="97.0" text="Gender" />
+      <Label layoutX="373.0" layoutY="42.0" text="CGPA" />
+      <Button layoutX="215.0" layoutY="200.0" mnemonicParsing="false" onAction="#createAndAddToArrayListOnAction" prefHeight="43.0" prefWidth="138.0" text="Create and Add to ArrayList " textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="249.0" layoutY="337.0" mnemonicParsing="false" onAction="#nextPageOnAction" text="Next Page" />
+   </children>
+</AnchorPane>
