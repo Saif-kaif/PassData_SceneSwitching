@@ -29,7 +29,7 @@ public class CreateStudentViewController
 
     @javafx.fxml.FXML
     public void initialize() {
-        genderComboBox.getItems().addAll("Female","male");
+        genderComboBox.getItems().addAll("Female","Male","Other");
 
     }
 
@@ -44,6 +44,7 @@ public class CreateStudentViewController
             ShowStudentController nextController = fxmlLoader.getController();
 
             nextController.toReceive = studentList;
+
             mainPane.getChildren().setAll(node);
         }
         catch (Exception e){

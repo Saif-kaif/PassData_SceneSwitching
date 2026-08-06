@@ -46,11 +46,13 @@ public class ShowStudentController
     public void backButtonOnAction(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CreateStudent.fxml"));
+            
             Node node = fxmlLoader.load();
 
-//            CreateStudentViewController nextController = fxmlLoader.getController();
-//            nextController.studentList = toReceive;                             to see previous data if back
+            CreateStudentViewController nextController = fxmlLoader.getController();
 
+            nextController.studentList = toReceive;
+                                                                     //to see previous data if back
             mainPane.getChildren().setAll(node);
         }
         catch (Exception e){
